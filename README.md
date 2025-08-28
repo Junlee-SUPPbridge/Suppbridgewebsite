@@ -1,77 +1,157 @@
-# 帮助教程
+# SuppBridge - Flexible Supply Chain Solutions
 
-访问帮助：[NotionNext帮助手册](https://docs.tangly1024.com/)
+基于 NotionNext 构建的专业供应链解决方案平台，专门为创新营养品牌提供灵活的供应链服务，包括配方制作、原料采购、生产商匹配以及物流清关。
 
-> 本项目教程为免费、公开资源，仅限个人学习使用，禁止利用本教程建立的博客发布非法内容、进行违法犯罪活动。严禁任何个人或组织将本教程用于商业用途，包括但不限于直接售卖、间接收费、或其他变相盈利行为。转载、复制或介绍本教程内容时，须保留作者信息并明确注明来源。 
-> 本项目仅提供由作者团队授权的付费咨询服务，请注意辨别，谨防诈骗行为。任何未经授权的收费服务均可能存在法律风险。
+## 🚀 项目特色
 
-Notion是一个能让效率暴涨的生产力引擎，可以帮你书写文档、管理笔记，搭建知识库，甚至可以为你规划项目、时间管理、组织团队、提高生产力、还有当前最强大的AI技术加持。
+- **简洁大气的设计** - 现代化的 UI/UX 设计，突出专业性和可信度
+- **响应式布局** - 完美适配各种设备尺寸
+- **Notion 集成** - 通过 NotionNext 实现内容管理，方便随时发布文章
+- **创新企业导向** - 专门针对创新企业和新品测试需求设计
+- **完整功能** - 包含所有必要的页面和功能组件
 
-> 如果希望进一步探索Notion的功能，欢迎购买《[Notion笔记从入门到精通进阶课程](https://docs.tangly1024.com/article/notion-tutorial)》
+## 🎯 目标受众
 
-# NotionNext
+- 创新营养品牌
+- 需要定制化配方的企业
+- 寻求优质原料和制造商的公司
+- 需要端到端供应链解决方案的品牌
+- 初创营养品牌和创业者
 
-<p>
-  <a aria-label="GitHub commit activity" href="https://github.com/tangly1024/NotionNext/commits/main" title="GitHub commit activity">
-    <img src="https://img.shields.io/github/commit-activity/m/tangly1024/NotionNext?style=for-the-badge"/>
-  </a>
-  <a aria-label="GitHub contributors" href="https://github.com/tangly1024/NotionNext/graphs/contributors" title="GitHub contributors">
-    <img src="https://img.shields.io/github/contributors/tangly1024/NotionNext?color=orange&style=for-the-badge"/>
-  </a>
-  <a aria-label="Build status" href="#" title="Build status">
-    <img src="https://img.shields.io/github/deployments/tangly1024/NotionNext/Production?logo=Vercel&style=for-the-badge"/>
-  </a>
-  <a aria-label="Powered by Vercel" href="https://vercel.com?utm_source=Craigary&utm_campaign=oss" title="Powered by Vercel">
-    <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" height="28"/>
-  </a>
-</p>
+## 📱 页面结构
 
-中文文档 | [README in English](./README_EN.md)
+- **Home** - 主页，展示核心价值和服务
+- **Services** - 服务页面，详细介绍供应链解决方案
+- **Solutions** - 解决方案页面，展示针对性的供应链服务
+- **Blog** - 博客页面，分享行业洞察和成功案例
+- **Contact Us** - 联系我们页面，包含联系表单和咨询功能
 
-<hr/>
+## 🛠️ 技术栈
 
-一个使用 NextJS + Notion API 实现的，部署在 Vercel 上的静态博客系统。为Notion和所有创作者设计。
+- **框架**: Next.js 13
+- **样式**: Tailwind CSS
+- **动画**: Framer Motion
+- **图标**: Lucide React
+- **内容管理**: NotionNext (集成)
+- **部署**: Vercel
 
-支持多种部署方案
+## 🚀 快速开始
 
-## 预览效果
+### 1. 安装依赖
 
-在线演示：[https://preview.tangly1024.com/](https://preview.tangly1024.com/) ，点击左下角挂件可以切换主题，没找到喜欢的主题？[贡献](/CONTRIBUTING.md)一个吧~
+```bash
+npm install
+# 或
+yarn install
+```
 
-| Next                                                                                                  | Medium                                                                                                      | Hexo                                                                                                  | Fukasawa                                                                                                          |
-| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| <img src='./docs/theme-next.png' width='300'/> [预览NEXT](https://preview.tangly1024.com/?theme=next) | <img src='./docs/theme-medium.png' width='300'/> [预览MEDIUM](https://preview.tangly1024.com/?theme=medium) | <img src='./docs/theme-hexo.png' width='300'/> [预览HEXO](https://preview.tangly1024.com/?theme=hexo) | <img src='./docs/theme-fukasawa.png' width='300'/> [预览FUKASAWA](https://preview.tangly1024.com/?theme=fukasawa) |
+### 2. 配置环境变量
 
-## 致谢
+创建 `.env.local` 文件：
 
-感谢Craig Hart发起的Nobelium项目
+```env
+NOTION_TOKEN=your_notion_token
+NOTION_DATABASE_ID=your_database_id
+NEXT_PUBLIC_SITE_URL=your_site_url
+```
 
-<table><tr align="left">
-  <td align="center"><a href="https://github.com/craigary" title="Craig Hart"><img src="https://avatars.githubusercontent.com/u/10571717" width="64px;"alt="Craig Hart"/></a><br/><a href="https://github.com/craigary" title="Craig Hart">Craig Hart</a></td>
-</tr></table>
+### 3. 启动开发服务器
 
-## 贡献者
+```bash
+npm run dev
+# 或
+yarn dev
+```
 
-感谢所有为 NotionNext 做出贡献的人！
+### 4. 构建生产版本
 
-[![Contributors](https://contrib.rocks/image?repo=tangly1024/NotionNext)](https://github.com/tangly1024/NotionNext/graphs/contributors)
+```bash
+npm run build
+# 或
+yarn build
+```
 
-## 引用技术
+## 📁 项目结构
 
-- **框架**: [Next.js](https://nextjs.org)
-- **样式**: [Tailwind CSS](https://www.tailwindcss.cn/)
-- **渲染**: [React-notion-x](https://github.com/NotionX/react-notion-x)
-- **评论**: [Twikoo](https://github.com/imaegoo/twikoo), [Giscus](https://giscus.app/zh-CN), [Gitalk](https://gitalk.github.io), [Cusdis](https://cusdis.com), [Utterances](https://utteranc.es)
-- **图标**: [Fontawesome](https://fontawesome.com/v6/icons/)
+```
+├── components/          # 可复用组件
+│   ├── Header.tsx      # 导航栏组件
+│   ├── Footer.tsx      # 页脚组件
+│   └── Layout.tsx      # 布局组件
+├── pages/              # 页面文件
+│   ├── index.tsx       # 主页
+│   ├── services/       # 服务页面
+│   ├── solutions/      # 解决方案页面
+│   ├── blog/           # 博客页面
+│   └── contact/        # 联系我们页面
+├── styles/             # 样式文件
+│   └── globals.css     # 全局样式
+├── public/             # 静态资源
+└── package.json        # 项目配置
+```
 
-## 🔗 友情链接
+## 🎨 自定义配置
 
-- [Elog](https://github.com/LetTTGACO/elog) Markdown 批量导出工具、开放式跨平台博客解决方案，随意组合写作平台(语雀/Notion/FlowUs/飞书)和博客平台(Hexo/Vitepress/Halo/Confluence/WordPress等)
+### 颜色主题
 
-## License
+在 `tailwind.config.js` 中修改颜色配置：
 
-The MIT License.
+```javascript
+colors: {
+  primary: {
+    50: '#f0f9ff',
+    100: '#e0f2fe',
+    // ... 更多颜色
+  },
+  secondary: {
+    // ... 次要颜色
+  }
+}
+```
 
-## Star History
+### 内容更新
 
-[![Star History Chart](https://api.star-history.com/svg?repos=tangly1024/NotionNext&type=Date)](https://star-history.com/#tangly1024/NotionNext&Date)
+通过 Notion 数据库更新内容，网站会自动同步最新信息。
+
+## 📱 响应式设计
+
+- 移动端优先设计
+- 支持平板和桌面设备
+- 优化的触摸交互体验
+
+## 🚀 部署
+
+### Vercel 部署
+
+1. 连接 GitHub 仓库
+2. 配置环境变量
+3. 自动部署
+
+### 其他平台
+
+支持部署到任何支持 Next.js 的平台。
+
+## 📈 SEO 优化
+
+- 完整的 meta 标签
+- 结构化数据
+- 优化的页面标题和描述
+- 图片 alt 标签
+
+## 🔧 维护和更新
+
+- 定期更新依赖包
+- 监控性能指标
+- 根据用户反馈优化体验
+
+## 📞 支持
+
+如有问题或需要定制，请联系开发团队。
+
+## 📄 许可证
+
+MIT License
+
+---
+
+**SuppBridge** - 为创新营养品牌提供灵活的供应链解决方案
